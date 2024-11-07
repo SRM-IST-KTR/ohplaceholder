@@ -7,28 +7,28 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 To get started with this project, follow these steps:
 
 1. Clone the repository:
-   ```bash
-    git clone <repository-url>
-   ```
+```bash
+git clone <repository-url>
+```
 
 2.	Install the dependencies:
-    ```bash
-        npm install
-    ```
+```bash
+npm install
+```
 
 3.	Start the development server:
-    ```bash
-    npm run dev
-    ```
+```bash
+npm run dev
+```
 
 Open http://localhost:3000 in your browser to view the website.
 
 Figma Design
 
 For the design layout, refer to this Figma link.
-    ```
-    https://www.figma.com/design/uyDsHd7eJugwAkLtWXfQs9/GCSRM-Recruitment?node-id=0-1&t=366rTJZGV8UgtKIC-1
-    ```
+```bash
+https://www.figma.com/design/uyDsHd7eJugwAkLtWXfQs9/GCSRM-Recruitment?node-id=0-1&t=366rTJZGV8UgtKIC-1
+```
 
 Editing the Project
 	•	You can edit the main page by modifying pages/index.js. Changes will auto-update in the browser.
