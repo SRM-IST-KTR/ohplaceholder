@@ -8,7 +8,7 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/SRM-IST-KTR/ohplaceholder.git
 ```
 
 2.	Install the dependencies:
@@ -30,7 +30,8 @@ For the design layout, refer to this Figma link.
 https://www.figma.com/design/uyDsHd7eJugwAkLtWXfQs9/GCSRM-Recruitment?node-id=0-1&t=366rTJZGV8UgtKIC-1
 ```
 
-Editing the Project
-	•	You can edit the main page by modifying pages/index.js. Changes will auto-update in the browser.
-	•	API Routes: You can access API routes on http://localhost:3000/api/hello. This endpoint can be edited in pages/api/hello.js.
+You can edit the main page by modifying pages/index.js. Changes will auto-update in the browser.
+
+You can access API routes on http://localhost:3000/api/hello. This endpoint can be edited in pages/api/hello.js.
+
 The pages/api directory is mapped to /api/*, and files here are treated as API routes instead of React pages.
