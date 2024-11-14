@@ -1,3 +1,4 @@
-
-echo 'Running npm run build checks before committing changes\n\n' && 
+#!/bin/sh
+echo "Running npm run build checks before committing changes\n\n"
 npm run build
+exit $?
