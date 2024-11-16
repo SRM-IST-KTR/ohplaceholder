@@ -1,0 +1,26 @@
+[33m235a89c[m[33m ([m[1;36mHEAD -> [m[1;32msahaj-hero.js[m[33m)[m done my part
+[33mb21066c[m[33m ([m[1;31morigin/staging[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mstaging[m[33m)[m remove husky
+[33me463886[m site map
+[33m342dd06[m landing page
+[33ma529cc0[m About the event
+[33m2a471d1[m testing
+[33m82cc5b5[m change font path
+[33ma94f536[m remove husky
+[33m0f68cfd[m Merge pull request #6 from SRM-IST-KTR/Pallavi-ohplaceholder
+[33mcac56f9[m[33m ([m[1;31morigin/Pallavi-ohplaceholder[m[33m)[m tried to make it as similar as shared
+[33mfc7fe75[m Update Footer.jsx
+[33mb2fb34e[m Update Navbar.jsx
+[33m27813cf[m Update Navbar.jsx
+[33mf5e0753[m Update Footer.jsx
+[33m933da31[m Update README.md
+[33mdf6a063[m Update README.md
+[33m8b0e5cc[m images
+[33mb75eaff[m 🤝 shared components
+[33m5fe58cc[m ✨ add Navbar and Footer components to the main application layout
+[33m93e4132[m 🌠 add react-icons dependency to package.json and package-lock.json
+[33m3514f30[m ✨ update homepage placeholder text
+[33m22c6b0c[m ✨ add sitemap configuration and initial XML files
+[33mbc66b98[m ✨ add pre-commit hook to run build checks
+[33m5567b59[m 🤖 file
+[33m7c8c362[m ✨ initial commit
+[33mab42543[m Initial commit
