@@ -1,115 +1,107 @@
-import Image from "next/image";
-import localFont from "next/font/local";
+import { useState } from "react";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const sponsors = [
+  {
+    name: "SWOC",
+    logo: "https://res.cloudinary.com/doslhy0tq/image/upload/v1729971260/SWOC_mfzb98.png",
+  },
+  {
+    name: "Linux Foundation",
+    logo: "https://www.linuxfoundation.org/hubfs/lf-stacked-color.svg",
+  },
+  {
+    name: "Genxyz",
+    logo: "https://res.cloudinary.com/doslhy0tq/image/upload/v1729540377/xyz-logo-color_mrldu1.svg",
+  },
+];
 
 export default function Home() {
-  return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li>THIS IS A PLACEHOLDER WEBSITE FOR OSSOME HACKS 2.0</li>
-        </ol>
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isCenterScaled, setIsCenterScaled] = useState(true);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  const handleArrowClick = (direction) => {
+    setIsCenterScaled(false);
+    setCurrentIndex((prevIndex) =>
+      direction === "left"
+        ? (prevIndex - 1 + sponsors.length) % sponsors.length
+        : (prevIndex + 1) % sponsors.length
+    );
+    setTimeout(() => setIsCenterScaled(true), 80);
+  };
+
+  return (
+    <div className="m-0 p-0 w-full">
+      <div className="w-full flex flex-col items-center gap-8 md:gap-20">
+        
+        {/* Section Header */}
+        <section className="w-full text-center">
+          <h1 className="text-[#FCF961] text-4xl md:text-6xl font-bold drop-shadow-[0_2px_1px_#ffffff80]">
+            PARTNERS AND SPONSORS
+          </h1>
+        </section>
+
+        {/* Carousel Container */}
+        <div className="w-full flex flex-col md:flex-row justify-between items-center gap-8 md:gap-16 p-8 md:p-32">
+          
+          {/* Left Arrow */}
+          <button
+            className="bg-[rgb(131,4,209)] w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center cursor-pointer"
+            onClick={() => handleArrowClick("left")}
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <img src="/leftarrow.png" alt="Left Arrow" className="max-w-[80%]" />
+          </button>
+
+          {/* Carousel Cards */}
+          <div className="flex flex-wrap justify-center items-center gap-5 md:gap-10 lg:gap-20">
+            
+            {/* Left Card */}
+            <div
+              className="w-28 h-40 md:w-40 md:h-52 lg:w-52 lg:h-72 bg-gradient-to-br from-purple-400 to-customPurpleEnd rounded-lg flex items-center justify-center transition-transform duration-300 ease-in-out"
+            >
+              <img
+                src={sponsors[(currentIndex - 1 + sponsors.length) % sponsors.length].logo}
+                alt={sponsors[(currentIndex - 1 + sponsors.length) % sponsors.length].name + " Logo"}
+                className="max-w-[70%] rounded-lg"
+              />
+            </div>
+
+          {/* Center Card */}
+{/* Center Card */}
+<div className="relative group">
+  <div
+    className={`w-36 h-48 md:w-52 md:h-64 lg:w-64 lg:h-80 bg-gradient-to-br from-purple-500 to-customPurpleEnd rounded-lg flex items-center justify-center transition-all duration-400 ease-in-out outline outline-4 outline-yellow-400  ${
+      isCenterScaled ? "scale-125 z-10" : ""
+    } group-hover:shadow-[0_0_20px_10px_rgba(252,249,97,0.5)]`}
+  >
+    <img
+      src={sponsors[currentIndex].logo}
+      alt={sponsors[currentIndex].name + " Logo"}
+      className="max-w-[70%] rounded-lg"
+    />
+  </div>
+</div>
+            {/* Right Card */}
+            <div
+              className="w-28 h-40 md:w-40 md:h-52 lg:w-52 lg:h-72 bg-gradient-to-br from-purple-400 to-customPurpleEnd rounded-lg flex items-center justify-center transition-transform duration-300 ease-in-out"
+            >
+              <img
+                src={sponsors[(currentIndex + 1) % sponsors.length].logo}
+                alt={sponsors[(currentIndex + 1) % sponsors.length].name + " Logo"}
+                className="max-w-[70%] rounded-lg"
+              />
+            </div>
+          </div>
+
+          {/* Right Arrow */}
+          <button
+            className="bg-[rgb(131,4,209)] w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center cursor-pointer"
+            onClick={() => handleArrowClick("right")}
           >
-            Read our docs
-          </a>
+            <img src="/rightarrow.png" alt="Right Arrow" className="max-w-[80%]" />
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
+
