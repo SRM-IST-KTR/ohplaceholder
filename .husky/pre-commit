@@ -1,3 +1,6 @@
-echo 'Running npm run build checks before committing changes\n\n' && 
-npm run build
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
 
+
+npm run lint
+npm test
