@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Navbar = () => {
   const [color, setColor] = useState("transparent");
@@ -36,24 +37,24 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <nav className="hidden md:flex gap-8 lg:gap-12">
-        <a href="/" className="hover:text-yellow-400">
+        <Link to="/" className="hover:text-yellow-400">
           Home
-        </a>
-        <a href="/" className="hover:text-yellow-400">
+        </Link>
+        <Link to="/about" className="hover:text-yellow-400">
           About Us
-        </a>
-        <a href="/" className="hover:text-yellow-400">
+        </Link>
+        <Link to="/schedule" className="hover:text-yellow-400">
           Schedule
-        </a>
-        <a href="/" className="hover:text-yellow-400">
+        </Link>
+        <Link to="/tracks" className="hover:text-yellow-400">
           Tracks
-        </a>
-        <a href="/" className="hover:text-yellow-400">
+        </Link>
+        <Link to="/faqs" className="hover:text-yellow-400">
           FAQs
-        </a>
-        <a href="/" className="hover:text-yellow-400">
+        </Link>
+        <Link to="/contact" className="hover:text-yellow-400">
           Contact Us
-        </a>
+        </Link>
       </nav>
 
       {/* Hamburger Menu Icon for Mobile */}
@@ -76,24 +77,44 @@ const Navbar = () => {
           <AiOutlineClose />
         </button>
         <nav className="flex flex-col items-start p-8 gap-4 mt-10">
-          <a href="/" className="hover:text-yellow-400" onClick={toggleMenu}>
+          <Link to="/" className="hover:text-yellow-400" onClick={toggleMenu}>
             Home
-          </a>
-          <a href="/" className="hover:text-yellow-400" onClick={toggleMenu}>
+          </Link>
+          <Link
+            to="/about"
+            className="hover:text-yellow-400"
+            onClick={toggleMenu}
+          >
             About Us
-          </a>
-          <a href="/" className="hover:text-yellow-400" onClick={toggleMenu}>
+          </Link>
+          <Link
+            to="/schedule"
+            className="hover:text-yellow-400"
+            onClick={toggleMenu}
+          >
             Schedule
-          </a>
-          <a href="/" className="hover:text-yellow-400" onClick={toggleMenu}>
+          </Link>
+          <Link
+            to="/tracks"
+            className="hover:text-yellow-400"
+            onClick={toggleMenu}
+          >
             Tracks
-          </a>
-          <a href="/" className="hover:text-yellow-400" onClick={toggleMenu}>
+          </Link>
+          <Link
+            to="/faqs"
+            className="hover:text-yellow-400"
+            onClick={toggleMenu}
+          >
             FAQs
-          </a>
-          <a href="/" className="hover:text-yellow-400" onClick={toggleMenu}>
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:text-yellow-400"
+            onClick={toggleMenu}
+          >
             Contact Us
-          </a>
+          </Link>
         </nav>
       </div>
     </div>
