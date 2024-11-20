@@ -1,11 +1,8 @@
-import React from 'react';
-import About from '@/components/Aboutus/About';
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
-    <>
-    <About/>
-    </>
+    <About />
   );
 }
 
