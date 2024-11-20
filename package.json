@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
@@ -20,7 +19,6 @@
   "devDependencies": {
     "eslint": "^8",
     "eslint-config-next": "14.2.16",
-    "husky": "^8.0.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
