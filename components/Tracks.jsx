@@ -3,7 +3,7 @@ import React from "react";
 const Tracks = () => {
     return (
         <>
-            <div className="mt-[250px]">
+            <div className="mt-[250px] ">
                 
                 <div className="text-center text-[119px] font-bold text-[#FCF961] mb-[80px] [text-shadow:_0_7px_10px_rgb(255_255_255_/_90%)]">TRACKS</div>
                     <div className="grid lg:grid-cols-[303px_303px_303px] md:grid-cols-[303px_303px] sm:grid-cols-[303px] gap-[113px] justify-center mb-[80px]">
