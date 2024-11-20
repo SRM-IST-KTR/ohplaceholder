@@ -1,7 +1,7 @@
 import React from 'react';
-import grid1 from '../../public/grid1.png';
-import grid2 from '../../public/grid2.png';
-import man from '../../public/aboutman.png';
+import grid1 from '../public/grid1.png';
+import grid2 from '../public/grid2.png';
+import man from '../public/aboutman.png';
 import Image from 'next/image';
 
 const About = () => {
