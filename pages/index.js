@@ -1,8 +1,7 @@
-import About from "@/components/About/About";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <About />
   );
 }
-
