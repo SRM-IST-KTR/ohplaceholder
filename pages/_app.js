@@ -9,7 +9,6 @@ export default function App({ Component, pageProps }) {
     <>
       <Navbar />
       <Component {...pageProps} />
-      <Tracks />
       <div className="z-500">
         <Scroll />
       </div>
