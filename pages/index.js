@@ -1,8 +1,8 @@
-import About from "@/components/About";
+import Tracks from "@/components/Tracks";
 
 export default function Home() {
   return (
-    <About />
+    <Tracks />
   );
 }
 
