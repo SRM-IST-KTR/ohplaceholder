@@ -6,7 +6,9 @@ import Scroll from "@/components/Shared/Scroll";
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Navbar />
+      <div className="z-500">
+        <Navbar />
+      </div>
       <Component {...pageProps} />
       <div className="z-500">
         <Scroll />
