@@ -13,7 +13,7 @@ const Faq = () => {
     };
 
     return (
-        <div className="my-20 py-10  text-white font-dmSans">
+        <div className="my-20 py-10  text-white font-dmSans" id="faqs">
             <div className="overflow-hidden">
                 <h1 className="text-[#FCF961] text-4xl sm:text-5xl md:text-6xl font-bold drop-shadow-lg text-center mb-16">
                     Frequently Asked Questions

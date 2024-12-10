@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="relative">
+        <div className="relative" id="contact">
             <footer className="flex flex-col md:px-10 bg-gradient-to-t   pb-10">
                 <div className="flex-grow grid mb-4 px-8 sm:px-24 sm:flex sm:justify-between lg:-mt-10 sm:items-center space-y-4 sm:space-y-0">
                     <div className="pr-7 sm:pr-0 text-center sm:text-left flex flex-col items-center justify-center lg:justify-start lg:items-start ml-4">

@@ -37,7 +37,7 @@ export function Tracks() {
     ];
 
     return (
-        <div className="mt-20">
+        <div className="mt-20" id="tracks">
             <h1 className="text-[#FCF961] text-4xl sm:text-5xl md:text-6xl font-bold drop-shadow-lg text-center">
                 PARTNERS AND SPONSORS
             </h1>
