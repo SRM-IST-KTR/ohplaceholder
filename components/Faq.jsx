@@ -31,7 +31,7 @@ const Faq = () => {
                             >
                                 <div
                                     className={`flex items-center justify-between p-4 pl-6 transition ease-in-out duration-700 rounded-2xl ${openAnswer === index
-                                        ? "bg-bright_green text-black"
+                                        ? "bg-bright_green text-green-500"
                                         : ""
                                         }`}
                                 >

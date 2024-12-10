@@ -13,7 +13,7 @@ const Footer = () => {
                         <div className="flex items-center justify-center">
                             <img
                                 className="h-[45px] md:h-[60px] lg:h-[65px] mb-3"
-                                src="Logo.png"
+                                src="logo.png"
                                 alt="Logo"
                             />
                         </div>
