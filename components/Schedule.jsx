@@ -30,23 +30,10 @@ const Schedule = () => {
     }, []);
 
     return (
-        <div className="min-h-screen relative overflow-hidden text-white">
-            <div className="absolute inset-0 overflow-hidden">
-                {[...Array(100)].map((_, i) => (
-                    <div
-                        key={i}
-                        className="absolute w-1 h-1 bg-blue-300/10 rounded-full animate-pulse"
-                        style={{
-                            left: `${Math.random() * 100}%`,
-                            top: `${Math.random() * 100}%`,
-                        }}
-                    />
-                ))}
-            </div>
-
-            <div className="relative z-10 container mx-auto px-4 lg:px-8">
-                <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen gap-16">
-                    <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+        <div id='schedule'>
+            <div className="z-10 container mx-auto mt-10 lg:mt-0">
+                <div className="flex flex-col lg:flex-row items-center justify-between h-[75vh] gap-4 lg:gap-8">
+                    <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
                         <h1 className="text-6xl font-extrabold text-[#FCF961] tracking-tight">
                             SCHEDULE
                         </h1>
@@ -54,7 +41,7 @@ const Schedule = () => {
                             10th - 12th March
                         </p>
 
-                        <div className="flex items-center justify-center lg:justify-start space-x-4">
+                        <div className="flex items-center justify-center lg:justify-start space-x-2">
                             <div className="text-5xl font-bold text-[#745198] tracking-wider">
                                 <span>{timeLeft.days.toString().padStart(2, '0')}D</span>
                                 <span className="mx-2 text-white">:</span>
@@ -64,9 +51,9 @@ const Schedule = () => {
                             </div>
                         </div>
 
-                        <div className="pt-6">
+                        <div className="pt-4">
                             <button className="px-8 py-4 bg-[#FCF961] text-black font-bold rounded-full shadow-lg hover:bg-[#e6e051] transition duration-300">
-                                Learn More
+                                Apply with Devfolio
                             </button>
                         </div>
                     </div>
@@ -74,7 +61,7 @@ const Schedule = () => {
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center">
                         <div className="relative w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] animate-float">
                             <Image
-                                src="/aboutman.png"
+                                src="/OCTOCATBHAIYA.png"
                                 alt="Schedule Illustration"
                                 layout="fill"
                                 objectFit="contain"
