@@ -5,7 +5,7 @@ import Scroll from "@/components/Shared/Scroll";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <div className=" bg-custom-gradient">
       <div className="z-500">
         <Navbar />
       </div>
@@ -14,6 +14,6 @@ export default function App({ Component, pageProps }) {
         <Scroll />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
