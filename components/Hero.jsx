@@ -60,6 +60,14 @@ export default function Hero() {
           src="/text.png"
           alt="Text Illustration"
         />
+        <a
+          href="https://devfolio.co"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 px-8 py-3 bg-blue-600 text-white font-bold text-lg rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+        >
+          APPLY WITH DEVFOLIO
+        </a>
       </div>
 
       {/* Floating Animation */}
