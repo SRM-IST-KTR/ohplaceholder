@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="relative" id="contact">
+        <div className="relative mt-20" id="contact">
             <footer className="flex flex-col md:px-10 bg-gradient-to-t   pb-10">
                 <div className="flex-grow grid mb-4 px-8 sm:px-24 sm:flex sm:justify-between lg:-mt-10 sm:items-center space-y-4 sm:space-y-0">
                     <div className="pr-7 sm:pr-0 text-center sm:text-left flex flex-col items-center justify-center lg:justify-start lg:items-start ml-4">
@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
 
                 <p className="text-center mt-1 sm:mt-8 mb-0 text-white font-poppins font-medium">
-                    Created By GCSRM Team 🐐
+                    <a href="https://docs.google.com/document/d/1aqwBeHFdfbiiINS1anuogG11zQtV9WP0A65SZ9yEp3g/edit?usp=sharing" target="_blank">Code of Conduct</a>
                 </p>
             </footer>
         </div>
