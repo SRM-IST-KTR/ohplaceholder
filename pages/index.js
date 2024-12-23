@@ -4,6 +4,7 @@ import Schedule from "@/components/Schedule";
 import { Tracks } from "@/components/Tracks";
 import Sponsors from "@/components/Sponsors";
 import Faq from "@/components/Faq";
+import CodeOfConduct from "@/components/codeOfConduct";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Tracks />
       <Sponsors />
       <Faq />
+      <CodeOfConduct />
     </>
   );
 }
