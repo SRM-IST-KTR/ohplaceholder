@@ -2,6 +2,18 @@ import { useState, useRef } from "react";
 
 const sponsors = [
     {
+        name: "Hashicorp",
+        logo: "https://res.cloudinary.com/doslhy0tq/image/upload/v1735487671/Hashicorp-Vertical_onDark_ko8lsi.png",
+    },
+    {
+        name: "CD Projekt Red",
+        logo: "https://res.cloudinary.com/doslhy0tq/image/upload/v1735487643/CDPR_Logo-Vertical-White_RGB_q6rqh3.png",
+    },
+    {
+        name: "CodeCrafters",
+        logo: "https://res.cloudinary.com/doslhy0tq/image/upload/v1735487849/CodeCrafters_Logo_White_vaosze.png",
+    },
+    {
         name: "SWOC",
         logo: "https://res.cloudinary.com/doslhy0tq/image/upload/v1729971260/SWOC_mfzb98.png",
     },
@@ -12,7 +24,7 @@ const sponsors = [
     {
         name: "Genxyz",
         logo: "https://res.cloudinary.com/doslhy0tq/image/upload/v1729540377/xyz-logo-color_mrldu1.svg",
-    },
+    }
 ];
 
 export default function Sponsors() {
